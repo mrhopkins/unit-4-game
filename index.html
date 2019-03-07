@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrystalsCollector Game</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- CrystalsCollector! jumbotron -->
+        <div class="jumbtron" id="background">
+            <h1 class="text-center">
+                <strong>CrystalsCollector!</strong>
+            </h1>
+        </div>
+        <!-- main content -->
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- instructions -->
+                <div class="card">
+                    <!-- <div class="card-header1" id="instructions">Instructions:</div> -->
+                    <div class="card-body">You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. You win the game by matching your total score to random number, you lose the game if your total score goes above the random number. The value of each crystal is hidden from you until you click on it. Each time when the game starts, the game will change the values of each crystal.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <!--crystals-->
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header text-center" id="crystals">Click on a Crystal</div>
+                    <div class="card-body text-center">
+                        <img src="assets/images/blue.png" alt="blue crystal" id="blue">
+                        <img src="assets/images/green.png" alt="green crystal" id="green">
+                        <img src="assets/images/red.png" alt="red crystal" id="red">
+                        <img src="assets/images/yellow.png" alt="yellow crystal" id="yellow">
+                    </div>
+                </div>
+            </div>
+            <!--target score-->
+            <div class="col-lg-2">
+                <div class="card">
+                    <div class="card-header text-center" id="targetScore">Target Score</div>
+                    <div class="card-body text-center">
+                        <div class="targetScore">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--user score-->
+            <div class="col-lg-2">
+                <div class="card">
+                    <div class="card-header text-center" id="score">Your Score</div>
+                    <div class="card-body text-center" id="userScore">
+                    </div>
+                </div>
+            </div>
+            <!--wins and losses counters-->
+            <!--wins-->
+            <div class="col-lg-2">
+                <div class="card">
+                    <div class="card-header text-center" id="wins">Wins</div>
+                    <div class="card-body text-center" id="win">
+                    </div>
+                </div>
+            </div>
+            <!--losses-->
+            <div class="col-lg-2">
+                <div class="card">
+                    <div class="card-header text-center" id="losses">Losses</div>
+                    <div class="card-body text-center" id="lose">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jquery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <!-- savascript-->
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
